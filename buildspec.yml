@@ -7,9 +7,8 @@ phases:
     commands:
       - echo "Installing dependencies..."
       - npm install
-      - echo "Building application..."
-      - npm start &
-      - sleep 2
+      - echo "Building..."
+      - npm run build
 artifacts:
   files:
     - '**/*'
