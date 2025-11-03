@@ -5,11 +5,9 @@ phases:
       nodejs: 18
   build:
     commands:
-      - echo "Installing dependencies..."
-      - npm install
       - echo "Building..."
       - npm run build
+      - echo "Build complete"
 artifacts:
   files:
     - '**/*'
-  discard-paths: yes
