@@ -5,6 +5,8 @@ phases:
       nodejs: 18
   build:
     commands:
+      - echo "Installing..."
+      - npm install
       - echo "Building..."
       - npm run build
       - echo "Build complete"
