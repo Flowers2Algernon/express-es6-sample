@@ -1,0 +1,16 @@
+version: 0.2
+phases:
+  install:
+    runtime-versions:
+      nodejs: 18
+  build:
+    commands:
+      - echo "Installing dependencies..."
+      - npm install
+      - echo "Building application..."
+      - npm start &
+      - sleep 2
+artifacts:
+  files:
+    - '**/*'
+  discard-paths: yes
